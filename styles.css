@@ -1,0 +1,130 @@
+body {
+  background-color: #fff;
+  font-family: Times, "Times New Roman", serif;
+  background-image: url("./images/background.gif");
+  color: #000;
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+.item1 {
+  grid-area: menu;
+  width: 128px;
+  height: 83px;
+  text-align: left;
+  background-color: #990000;
+  margin-right: 10px;
+}
+
+.item2 {
+  grid-area: header;
+  text-align: left;
+}
+
+.item3 {
+  grid-area: main;
+  text-align: left;
+}
+
+.item4 {
+  grid-area: right;
+  text-align: right;
+}
+
+.item5 {
+  grid-area: footer;
+  font-size: 12px;
+}
+
+.item6 {
+  grid-area: gutter;
+  width: 10px;
+  text-align: center;
+}
+
+footer {
+  font-size: 10px;
+  text-align: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "menu header header header" "menu main gutter right"
+    "menu footer footer footer";
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  width: 600px;
+}
+
+.grid-container > div {
+  text-align: left;
+  padding: 0 0 0 0;
+  font-size: 14px;
+}
+
+select {
+  padding: 5px;
+}
+
+select > option {
+  font-size: 12px;
+}
+
+#for,
+#go {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* images */
+.headerimg {
+  width: 463px;
+  height: 65px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.dateimg {
+  width: 463px;
+  height: 18px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.cyberimg {
+  width: 300px;
+  height: 165px;
+  border: none;
+}
+.promoimg {
+  width: 463px;
+  height: 173px;
+  border: none;
+  padding-bottom: 5px;
+}
+
+.promoleft,
+.promoright {
+  display: inline;
+  float: left;
+}
+
+.leftcol,
+.rightcol {
+  width: 220px;
+}
+
+.applesite {
+  color: #990000;
+}
+
+.emateimg,
+.cyberimg {
+  width: 200px;
+  height: auto;
+  float: right;
+  display: inline;
+  padding: 10px;
+  filter: drop-shadow(2px 2px 2px #000000);
+}

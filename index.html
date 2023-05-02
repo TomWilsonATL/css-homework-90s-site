@@ -11,227 +11,300 @@
 </head>
 
 <body>
-    <form action="#" method="post">
-        <div class="grid-container">
-            <div class="item1">
-                <!-- MENU -->
-
-                <!-- Image nav 1 -->
-                <img src="./images/sidebarA.gif">
-
-                <img src="./images/divider.gif">
-                <img src="./images/worldwide.gif">
-
-                <!-- Form -->
-                <div align="center" id="form">
-                    <select name="newPage" size="5">
-                        <option>Asia
-                        </option><option>Australia
-                        </option><option>Belgium
-                        </option><option>Canada
-                        </option><option>Chile
-                        </option><option>Czech Republic
-                        </option><option>Denmark
-                        </option><option>Europe
-                        </option><option>Finland
-                        </option><option>France
-                        </option><option>Germany
-                        </option><option>Holland
-                        </option><option>Hong Kong
-                        </option><option>Hungary
-                        </option><option>Iceland
-                        </option><option>Italy
-                        </option><option>Japan
-                        </option><option>Latin America
-                        </option><option>Mexico
-                        </option><option>New Zealand
-                        </option><option>Norway
-                        </option><option>Poland
-                        </option><option>Slovakia
-                        </option><option>South Africa
-                        </option><option>Spain
-                        </option><option>Sweden
-                        </option><option>Switzerland
-                        </option><option>Taiwan
-                        </option><option>Turkey
-                        </option><option>UK &amp; Ireland
-                        </option><option selected="">United States
-                    </option></select>
-
-                    <input name="newPage" type="image" src="images/go.gif " alt="Go" nocursor=" " width="120 " height="31 " border="0" id="go">
-                </div>
 
 
+    <div class="grid-container">
+        <div class="colNav">
+            <!-- MENU -->
 
-                <img src="./images/divider.gif ">
+            <!-- Image nav 1 -->
+            <a href="find-it.html"><img src="./images/findit.gif" alt="Find It" class="finditbtn"></a>
+            <ul class="navmenu no-bullets">
+                <li><a href="product-information.html">Product Information</a></li>
+                <li><a href="customer-support.html">Customer Support</a></li>
+                <li><a href="technology.html">Technology &amp; Research</a></li>
+                <li><a href="developer-world.html">Developer World</a></li>
+                <li><a href="groups-and-interests.html">Groups &amp; Interests</a></li>
+                <li><a href="resources-online.html">Resources Online</a></li>
+                <li><a href="about-apple.html">About Apple</a></li>
+            </ul>
 
-                <!-- Image nav 2 -->
-                <img src="./images/sidebarB.gif ">
+            <img src="./images/divider.gif">
+            <img src="./images/worldwide.gif" alt="Apple Sites Worldwide" title="Apple Sites Worldwide">
+
+            <!-- Form -->
+            <div align="center" id="myform">
+
+                <script language="javascript">
+                    function myChangeHandler() {
+                        window.open(this.options[this.selectedIndex].value, '_blank');
+                        this.form.submit();
+                    }
+                </script>
+
+                <form id="formElement" method="get" action="#">
+                    <select onchange="myChangeHandler.apply(this)" size="5">
+                        <option value="https://www.apple.com/hk/">Asia</option>
+                        <option value="https://www.apple.com/au/">Australia</option>
+                        <option value="https://www.apple.com/benl/">Belgium</option>
+                        <option value="https://www.apple.com/ca/">Canada</option>
+                        <option value="https://www.apple.com/cl/">Chile</option>
+                        <option value="https://www.apple.com/cz/">Czech Republic</option>
+                        <option value="https://www.apple.com/dk/">Denmark</option>
+                        <option value="https://www.apple.com/fi/">Finland</option>
+                        <option value="https://www.apple.com/fr/">France</option>
+                        <option value="https://www.apple.com/de/">Germany</option>
+                        <option value="https://www.apple.com/nl/">Holland</option>
+                        <option value="https://www.apple.com/hk/en/">Hong Kong</option>
+                        <option value="https://www.apple.com/hu/">Hungary</option>
+                        <option value="https://www.apple.com/it/">Italy</option>
+                        <option value="https://www.apple.com/jp/">Japan</option>
+                        <option value="https://www.apple.com/lae/">Latin America</option>
+                        <option value="https://www.apple.com/mx/">Mexico</option>
+                        <option value="https://www.apple.com/nz/">New Zealand</option>
+                        <option value="https://www.apple.com/no/">Norway</option>
+                        <option value="https://www.apple.com/pl/">Poland</option>
+                        <option value="https://www.apple.com/si/">Slovakia</option>
+                        <option value="https://www.apple.com/za/">South Africa</option>
+                        <option value="https://www.apple.com/es/">Spain</option>
+                        <option value="https://www.apple.com/se/">Sweden</option>
+                        <option value="https://www.apple.com/chde/">Switzerland</option>
+                        <option value="https://www.apple.com/th/">Taiwan</option>
+                        <option value="https://www.apple.com/tr/">Turkey</option>
+                        <option value="https://www.apple.com/uk/">UK &amp; Ireland</option>
+                        <option value="https://www.apple.com/">United States
+                    </option></select></form>
+
+                <img src="images/go.gif" alt="Go" title="Select a site from the form above">
+
 
             </div>
-            <div class="item2">
-                <!-- HEADER -->
-                <img src="images/970714.gif" class="dateimg" alt="July 14, 1997"><br>
-                <img src="images/banner.gif" class="headerimg" alt="Welcome to Apple 1997"><br>
-                <img src="images/promo.jpg" class="promoimg" alt="Introducing CyberDrive.." usemap="#image-map"><br>
 
-                <map name="image-map">
+
+
+            <img src="./images/divider.gif ">
+
+            <!-- nav b -->
+            <ul class="navmenu no-bullets">
+                <li><a href="where-to-buy.html">Where to Buy</a></li>
+                <li><a href="register-to-win.html">Register to Win</a></li>
+                <li><a href="software-updates.html">Software Updates</a></li>
+                <li><a href="homepage-archives.html">Home Page Archives</a></li>
+            </ul>
+
+        </div>
+        <div class="colHeader">
+            <!-- HEADER -->
+            <img src="images/970714.gif" class="dateimg" alt="July 14, 1997" title="July 14, 1997"><br>
+            <img src="images/banner.gif" class="headerimg" alt="Welcome to Apple 1997" title="Welcome to Apple 1997"><br>
+            <img src="images/promo.jpg" class="promoimg" alt="Introducing CyberDrive.." usemap="#image-map"><br>
+
+            <map name="image-map">
                     <area alt="Introducing CyberDrive" title="Introducing CyberDrive" href="cyberdrive.html" coords="302,172,3,3" shape="rect">
                     <area alt="Emate 300" title="Emate 300" href="emate300.html" coords="320,76,451,6" shape="rect">
                     <area alt="Movies from Mars" title="Movies from Mars" href="moviesfrommars.html" coords="454,165,318,88" shape="rect">
                 </map>
 
-                <img src="images/whatshot.gif" alt="What's Hot">
-            </div>
-            <div class="item3">
-                <!-- MAIN LEFT -->
-
-                <div class="leftcol">
-                    <h3> Preorder Mac OS 8</h3>
-                    Now you can preorder Mac OS 8, described by Macworld as "the most comprehensive update to the Mac OS in years, sporting a
-                    bold new look, a speedier Finder, more shortcuts and integrated Internet functions."
-
-                    <hr class="hrdivider">
-
-                    <h3>Want a PowerBook?</h3>
-                    Qualify to win a PowerBook 3400/200 by entering this month's Apple Registration Sweepstakes.
-
-                    <hr class="hrdivider">
-
-                    <h3>Big Help for Small Biz </h3>
-                    Find out what you need to make your small business a success. Apple Small Business has information about everything from
-                    great deals on leasing to dealing with the SBA.
-
-                    <hr class="hrdivider">
-
-                    <h3>eMate Special</h3>
-                    Parents of school-age children have a limited-time special opportunity to purchase Apple's exciting eMate 300 mobile computer
-                    at promotional prices.
-
-                    <hr class="hrdivider">
-
-                    <h3>Apple Softwear</h3>
-                    Find t-shirts, jackets, backpacks and other great gear at AppleDesigns, the Apple online department store. Great gifts for
-                    friends and family.
-
-                    <hr class="hrdivider">
-
-                    <h3>AppleShare IP</h3>
-                    The latest AppleShare IP 5.0 offers Internet services including file sharing, FTP and email, improves performance, integrates
-                    all workgroup services and provides ease of development and administration.
-
-                    <hr class="hrdivider">
-
-                    <h3 class="applesite">APPLE SITE OF THE DAY</h3>
-
-                    <h3>People Like You</h3>
-                    You've got this great Apple product, and you'd like to share your experiences with people like yourself. Find the User Group
-                    that's nearest you.
-
-                    <hr class="hrdivider">
-
-                    <h3>New Color Printers</h3>
-                    Three new Apple color ink jet printers, the Color StyleWriter 4100, Color StyleWriter 4500 and Color StyleWriter 6500, offer
-                    great performance and advanced technology.
-
-                    <hr class="hrdivider">
-
-                    <h3> Mac OS 8 Preview</h3>
-                    Get the latest info, including early rave reviews, on Mac OS 8, which offers a new user experience and a wealth of Internet
-                    services. See a screen shot and descriptions of cool new features.
-
-                    <hr class="hrdivider">
-
-                    <h3> World's Fastest Laptop</h3>
-                    The blazingly fast (240MHz) PowerBook 3400 gives you state-of-the-art multimedia, advanced communications capabilities, and
-                    flexible expansion options.
-                </div>
-
-            </div>
-            <div class="item4">
-                <!-- MAIN RIGHT -->
-                <div class="rightcol">
-
-                    <h3>Be the First to Know</h3>
-                    Learn about new Macintosh software releases the moment they become available. Check Hot Mac Products to hear about programs
-                    like Speed Demon, ReBirth RB-338 and QuickCRC.
-
-                    <hr class="hrdivider">
-
-                    <h3>Newton Connects</h3>
-                    Newton, Inc., will enhance network connectivity for Newton-based devices this fall via Newton Internet Enabler 2.0. Ethernet
-                    capability can connect devices to Local Area Networks.
-
-                    <hr class="hrdivider">
-
-                    <h3> Welcome to Mars</h3>
-                    See alien terrain in QuickTime VR movies from Sojourner, the brave six-wheeler that covers the Red Planet for NASAs Pathfinder
-                    mission.
-
-                    <hr class="hrdivider">
-
-                    <h3>Boston Mac Party</h3>
-                    Join the fun at Macworld Expo/Boston, the summer's biggest bash for the Macintosh community, August 5-8.
-
-                    <hr class="hrdivider">
-
-                    <h3 class="applesite"> CORPORATE UPDATES</h3>
-
-                    Check out Apple's Information Resource for Press and Analysts to find out what's happening at Apple Computer.
-
-                    <h3> Schools Choose Macs</h3>
-                    School districts throughout the US are choosing Macintosh over the Windows platform, reports a new study by Quality Education
-                    Data.
-
-                    <hr class="hrdivider">
-
-                    <h3 class="applesite">HOT TIP</h3>
-
-                    <h3>Windows 95 Floppies</h3>
-                    To mount 1.6MB DMF Windows 95 floppies on your Mac, use Apple PC Exchange version 2.0.7 or later (v. 2.1.1 comes with Mac
-                    OS 7.6).
-
-                    <hr class="hrdivider">
-
-                    <h3> TIL of Tomorrow</h3>
-                    The Tech Info Library -- a treasury of useful facts, insights and magic spells -- sports a new look, with clickable tabs
-                    for Search, Browse, Top Articles and Help.
-
-                    <hr class="hrdivider">
-
-                    <h3>Ultimate Ultralight PowerBook</h3>
-                    The 180MHz Macintosh PowerBook 2400 is the ideal solution for mobile professionals who want speed and connectivity in a super-slim
-                    notebook computer.
-
-                    <hr class="hrdivider">
-
-                    <h3> Macs Unmasked</h3>
-                    See Macs emote in Starring Apple, with clips &amp; pics galore from "Batman &amp; Robin." "We had an insatiable appetite
-                    for the Mac," says the computer graphics supervisor for "B&amp;R.;"
-
-                    <hr class="hrdivider">
-
-                    <h3> World's Fastest Home Computer</h3>
-                    What's a machine this fast doing at home? The Power Macintosh 6500 runs at blistering speeds of up to 300MHz.
-                </div>
-
-
-            </div>
-            <div class="item5 ">
-                <p><a href="#">Product Information</a> | <a href="#">Customer Support</a> |<a href="#">Technology &amp; Research</a>                    | <a href="#">Developer World
-                    Groups &amp; Interests</a> | <a href="#">Resources Online</a> | <a href="#">About Apple</a></p>
-
-                <p><a href="#">Where to Buy</a> | <a href="#">Register to Win</a> | <a href="#">Software Updates</a> | <a href="#">Home Page Archives</a></p>
-
-                <p><a href="#">What's New</a> | <a href="#">Find It</a> |<a href="#"> Apple Computer, Inc.</a> | <a href="#">Contact Us</a>                    | <a href="#">Help</a></p>
-
-
-                <footer>
-                    Copyright © 1997 Apple Computer, Inc.<br> Maintained online by webmaster@apple.com.
-                </footer>
-            </div>
+            <img src="images/whatshot.gif" alt="What's Hot" title="What's Hot" class="hotimg">
         </div>
-    </form>
+        <div class="colMainLeft">
+            <!-- MAIN LEFT -->
+            <h3> Preorder Mac OS 8</h3>
+            Now you can <a href="#">preorder Mac OS 8</a>, described by Macworld as "the most comprehensive update to the
+            Mac OS in years, sporting a bold new look, a speedier Finder, more shortcuts and integrated Internet functions."
+
+            <hr class="hrdivider">
+
+            <h3>Want a PowerBook?</h3>
+            Qualify to win a <a href="#">PowerBook 3400/200</a> by <a href="#">entering</a> this month's Apple Registration
+            Sweepstakes.
+
+            <hr class="hrdivider">
+
+            <h3>Big Help for Small Biz </h3>
+            Find out what you need to make your small business a success. <a href="#">Apple Small Business</a> has information
+            about everything from great deals on leasing to dealing with the SBA.
+
+            <hr class="hrdivider">
+
+            <h3>eMate Special</h3>
+            Parents of school-age children have a limited-time special opportunity to purchase Apple's exciting eMate 300 mobile computer
+            at promotional prices.
+
+            <hr class="hrdivider">
+
+            <h3>Apple Softwear</h3>
+            Find t-shirts, jackets, backpacks and other great gear at <a href="#">AppleDesigns</a>, the Apple online department
+            store. Great gifts for friends and family.
+
+            <hr class="hrdivider">
+
+            <h3>AppleShare IP</h3>
+            The latest <a href="#">AppleShare IP 5.0</a> offers Internet services including file sharing, FTP and email,
+            improves performance, integrates all workgroup services and provides ease of development and administration.
+
+            <hr class="hrdivider">
+
+            <h3 class="applesite">APPLE SITE OF THE DAY</h3>
+
+            <h3>People Like You</h3>
+            You've got this great Apple product, and you'd like to share your experiences with people like yourself. Find the
+            <a href="#">User Group</a> that's nearest you.
+
+            <hr class="hrdivider">
+
+            <h3>New Color Printers</h3>
+            Three new Apple color ink jet <a href="#">printers</a>, the <a href="#">Color StyleWriter 4100</a>,
+            <a href="#">Color StyleWriter 4500</a> and <a href="#">Color StyleWriter 6500</a>, offer great performance and
+            advanced technology.
+
+            <hr class="hrdivider">
+
+            <h3> Mac OS 8 Preview</h3>
+            Get the latest info, including early rave reviews, on <a href="#">Mac OS 8</a>, which offers a new user experience
+            and a wealth of Internet services. See a <a href="#">screen shot</a> and descriptions of cool new features.
+
+            <hr class="hrdivider">
+
+            <h3> World's Fastest Laptop</h3>
+            The blazingly fast (240MHz) <a href="#">PowerBook 3400</a> gives you state-of-the-art multimedia, advanced communications
+            capabilities, and flexible expansion options.
+
+
+        </div>
+        <div>
+            <img src="./images/black.gif" class="dotBlackMain">
+        </div>
+        <div class="colMainRight">
+            <!-- MAIN RIGHT -->
+
+
+            <h3>Be the First to Know</h3>
+            Learn about new Macintosh software releases the moment they become available. Check <a href="#">Hot Mac Products</a>            to hear about programs like Speed Demon, ReBirth RB-338 and QuickCRC.
+
+            <hr class="hrdivider">
+
+            <h3>Newton Connects</h3>
+            Newton, Inc., will enhance network connectivity for Newton-based devices this fall via <a href="#">Newton Internet Enabler 2.0</a>.
+            Ethernet capability can connect devices to Local Area Networks.
+
+            <hr class="hrdivider">
+
+            <h3> Welcome to Mars</h3>
+            See alien terrain in <a href="#">QuickTime VR movies</a> from Sojourner, the brave six-wheeler that covers the
+            Red Planet for NASAs Pathfinder mission.
+
+            <hr class="hrdivider">
+
+            <h3>Boston Mac Party</h3>
+            Join the fun at <a href="#">Macworld Expo/Boston</a>, the summer's biggest bash for the Macintosh community,
+            August 5-8.
+
+            <hr class="hrdivider">
+
+            <h3 class="applesite"> CORPORATE UPDATES</h3>
+
+            Check out Apple's <a href="#">Information Resource for Press and Analysts</a> to find out what's happening at
+            Apple Computer.
+
+            <hr class="hrdivider">
+
+            <h3> Schools Choose Macs</h3>
+            School districts throughout the US are choosing Macintosh over the Windows platform, <a href="#">reports a new study</a>            by Quality Education Data.
+
+            <hr class="hrdivider">
+
+            <h3 class="applesite">HOT TIP</h3>
+
+            <h3>Windows 95 Floppies</h3>
+            To mount 1.6MB DMF Windows 95 floppies on your Mac, use Apple PC Exchange version 2.0.7 or later (v. 2.1.1 comes with Mac
+            OS 7.6).
+
+            <hr class="hrdivider">
+
+            <h3> TIL of Tomorrow</h3>
+            The <a href="#">Tech Info Library</a> -- a treasury of useful facts, insights and magic spells -- sports a new
+            look, with clickable tabs for Search, Browse, Top Articles and Help.
+
+            <hr class="hrdivider">
+
+            <h3>Ultimate Ultralight PowerBook</h3>
+            The 180MHz Macintosh <a href="#">PowerBook 2400</a> is the ideal solution for mobile professionals who want speed
+            and connectivity in a super-slim notebook computer.
+
+            <hr class="hrdivider">
+
+            <h3> Macs Unmasked</h3>
+            See Macs emote in <a href="#">Starring Apple</a>, with clips &amp; pics galore from "Batman &amp; Robin." "We
+            had an <a href="#">insatiable appetite
+                for the Mac</a>," says the computer graphics supervisor for "B&amp;R.;"
+
+            <hr class="hrdivider">
+
+            <h3> World's Fastest Home Computer</h3>
+            What's a machine this fast doing at home? The <a href="#">Power Macintosh 6500</a> runs at blistering
+            <a href="#">speeds of up to 300MHz</a>.
+
+
+
+        </div>
+        <div class="item5">
+
+            <!-- RECENT STORIES -->
+            <img src="./images/recentstories.gif" class="recentimg" alt="Recent Stories" title="Recent Stories">
+
+            <div class="gridRecent">
+                <div class="gridRecent-leftCol">
+                    <a href="#">Avie Tevanian on Mac OS 8</a><br>
+                    <a href="#">ClarisWorks for Kids</a><br>
+                    <a href="#">Job Opportunities at Apple</a><br>
+                    <a href="#">PC-Compatible Macs</a>
+                </div>
+                <div class="gridRecent-center">
+                    <img src="./images/black.gif" class="dotBlackRecent">
+                </div>
+                <div class="gridRecent-rightCol">
+                    <a href="#">Personal Web Sharing</a><br>
+                    <a href="#">Super Summer Sweepstakes</a><br>
+                    <a href="#">Thousands of Mac Products</a>
+                </div>
+            </div>
+
+
+
+            <!-- BOTTOM NAV -->
+            <div align="center">
+                <img src="./images/bottombar.gif" usemap="#image-map-btm" class="btmbar">
+
+                <map name="image-map-btm">
+                    <area target="_top" alt="What's New" title="What's New" href="whats-new.html" coords="10,9,66,24" shape="rect">
+                    <area target="_top" alt="Find It" title="Find It" href="find-it.html" coords="80,6,137,23" shape="rect">
+                    <area target="_top" alt="Apple Computer, Inc." title="Apple Computer, Inc." href="apple-computer-inc.html" coords="148,8,206,25" shape="rect">
+                    <area target="_top" alt="Contact Us" title="Contact Us" href="contact-us.html" coords="218,7,276,24" shape="rect">
+                    <area target="_top" alt="Help" title="Help" href="help.html" coords="290,7,348,22" shape="rect">
+                </map>
+
+
+                <!-- FOOTER NAV -->
+
+                <p><a href="product-information.html">Product Information</a> | <a href="customer-support.html">Customer Support</a>                    |<a href="technology.html">Technology &amp; Research</a> | <a href="developer-world.html">Developer World</a>                    | <a href="groups-and-interests.html">
+                    Groups &amp; Interests</a> | <a href="resources-online.html">Resources Online</a> | <a href="about-apple.html">About Apple</a></p>
+
+                <p><a href="where-to-buy.html">Where to Buy</a> | <a href="register-to-win.html">Register to Win</a> |
+                    <a href="software-updates.html">Software Updates</a> |
+                    <a href="homepage-archives.html">Home Page Archives</a>
+                </p>
+
+                <p><a href="whats-new.html">What's New</a> | <a href="find-it.html">Find It</a> |<a href="apple-computer-inc.html"> Apple Computer, Inc.</a>                    |
+                    <a href="contact-us.html">Contact Us</a> | <a href="help.html">Help</a></p>
+            </div>
+
+            <footer>
+                Copyright © 1997 Apple Computer, Inc.<br> Maintained online by <a href="mailto:webmaster@apple.com">webmaster@apple.com</a>.
+            </footer>
+        </div>
+    </div>
+
 </body>
 
 </html>
